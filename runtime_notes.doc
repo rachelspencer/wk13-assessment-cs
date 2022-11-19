@@ -1,0 +1,21 @@
+Results for the extraLargeArray
+insert 872.121267 ms
+append 3.316347 ms
+
+Results for the largeArray
+insert 5.687171 ms
+append 551.613 μs
+
+Results for the mediumArray
+insert 154.734 μs
+append 149.201 μs
+
+Results for the smallArray
+insert 50.154 μs
+append 108.462 μs
+
+Results for the tinyArray
+insert 43.35 μs
+append 100.037 μs
+
+The append method, although marginally slower with the smaller arrays, it would still be the better method to use. This is becuase its still very quick with small arrays, but its performance impoves as the array grows. This is because append is simply adding a value onto the end of the array. Whereas insert appends to the front of the array and has to shuffle all existing values up by one index. This makes the insert methods execution time grow each iteration, slowing it down. 
